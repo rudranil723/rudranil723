@@ -1,7 +1,6 @@
 ### Hey!! World, I'am RUDRANIL SHIL 👋
 
 
-
 - 🔭 I’m currently working on AI
 - 🌱 I’m currently learning javascript, python
 - 👯 I’m looking to collaborate on web-devlopment projects
@@ -10,4 +9,3 @@
 - 📫 How to reach me: 8016613206
 - 😄 Pronouns: he/his
 - ⚡ Fun fact: I like to code while listening to music
--->
