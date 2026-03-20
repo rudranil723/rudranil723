@@ -1,11 +1,20 @@
-### Hey!! World, I'am RUDRANIL SHIL 👋
-
-
-- 🔭 I’m currently working on AI
-- 🌱 I’m currently learning javascript, python
-- 👯 I’m looking to collaborate on web-devlopment projects
-- 🤔 I’m looking for help with web devlopment
-- 💬 Ask me about life
-- 📫 How to reach me: 8016613206
-- 😄 Pronouns: he/his
-- ⚡ Fun fact: I like to code while listening to music
+name: Generate Snake
+on:
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: rudranil723
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
